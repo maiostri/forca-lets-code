@@ -1,0 +1,4 @@
+<p>{{ palavraEntrada }} </p>
+<app-game-input (onSuggest)="verificaLetra($event)"></app-game-input>
+<app-game-result [status]="statusAtual" [numeroDeTentativas]="numeroDeTentativas"></app-game-result>
+<button (click)="reinicia()">Reinicia</button>

@@ -1,0 +1,5 @@
+<div [ngSwitch]="status">
+    <span *ngSwitchCase="opcoesDeStatus.WIN">Você ganhou o jogo!!</span>
+    <span *ngSwitchCase="opcoesDeStatus.LOSE">Que má sorte. Você perdeu.</span>
+    <span *ngSwitchCase="opcoesDeStatus.IN_GAME">Jogo rolando. Numéro de tentativas {{ numeroDeTentativas }}</span>
+</div>
